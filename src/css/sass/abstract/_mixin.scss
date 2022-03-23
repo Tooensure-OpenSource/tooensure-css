@@ -1,0 +1,41 @@
+@mixin animate($xStart, $xEnd) {
+    @keyframes animation {
+        0% {
+            opacity: 0;
+            transform: translateX($xStart);
+        }
+
+        100% {
+            @content;
+            opacity: 1;
+            transform: translateX($xEnd);
+        }
+    }
+    animation: animation;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+@mixin animate-default($delay) {
+    @content;
+    animation-duration: 1s;
+    animation-delay: $delay;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+@mixin animate-settings($xStart, $xEnd) {
+    @keyframes animateInLeft {
+        @content;
+        0% {
+            opacity: 0;
+            transform: translateX($xStart);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX($xEnd);
+        }
+    }
+}

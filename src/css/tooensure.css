@@ -1,0 +1,68 @@
+.animate-move-in-left {
+  animation: moveInLeft;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); }
+  50% {
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.animate-repeat {
+  animation-iteration-count: infinite !important; }
+
+.animate-move-in-right {
+  animation: moveInRight;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease; }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px); }
+  50% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.animate-move-in-up {
+  animation: moveInUp;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease; }
+
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.animate-float {
+  animation: float  5s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in; }
+
+@keyframes float {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateX(0); } }
+
+.clip {
+  clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0 100%); }

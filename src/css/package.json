@@ -1,0 +1,14 @@
+{
+  "name": "tooensure-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "service-worker.js",
+  "scripts": {
+    "sass": "node-sass ./css/tooensure-css/sass/main.scss ./css/tooensure.css -w"
+  },
+  "author": "shawn bellazan",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

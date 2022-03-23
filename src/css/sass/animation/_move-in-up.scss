@@ -1,0 +1,44 @@
+
+.animate-move-in-up {
+    @include animate-default(0s)
+    {
+        animation: moveInUp;
+    }
+} 
+
+@keyframes moveInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.animate-float {
+    animation: 
+    float 
+    5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+} 
+
+@keyframes float {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

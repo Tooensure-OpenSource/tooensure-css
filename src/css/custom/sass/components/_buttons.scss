@@ -1,0 +1,89 @@
+.btn-group {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn-group {
+    // padding: 330px,10px;
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    // justify-content: space-around;
+    // background-color: aqua;
+    width: 100%;
+}   
+.btn-primary {
+    // color: rebeccapurple;
+    @include set-view(tab-port) {
+        color: #fff;
+        font-size: 2.5vw;
+    }
+}
+
+.btn:link, .btn:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    // margin: 0 1rem;
+    flex-basis: 10rem;
+    &:first-child {
+        margin-right: 1rem;
+        // flex: .5;
+    }
+    // flex: .5;
+
+    // flex-direction: row;
+    display: inline-block;
+    align-items: baseline;
+
+    border-radius: 1rem;
+    transition: all .2s;
+    position: relative;
+    @include set-view(mobile) {
+        padding: 15px 15px;
+    }
+    @include set-view(tab-port) {
+        padding: 15px 25px;
+    }
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    color: #777;
+    background-color: #fff;
+    font-weight: 700;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.btn-white {
+    background-color:rgba(180, 180, 180, 0.47);
+    color: #fff;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+.btn:hover::after {
+    transform: scale(1.5);
+    opacity: 0;
+}
+@include set-view(phone) {
+    font-size: 20px;
+}
+@include set-view(tab-port) {
+}
+@include set-view(tab-land) {
+}
+@include set-view(desktop) {
+}

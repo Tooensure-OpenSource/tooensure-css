@@ -1,0 +1,22 @@
+
+.animate-move-in-left {
+    @include animate-default(0s)
+    {
+        animation: moveInLeft;
+    }
+} 
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

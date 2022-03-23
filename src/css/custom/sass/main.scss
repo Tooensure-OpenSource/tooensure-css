@@ -1,0 +1,47 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'components/buttons';
+
+@import 'layout/grid';
+@import 'layout/header';
+
+@import 'pages/home';
+
+@import 'themes/theme';
+
+.main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.profile-container {
+    position: absolute;
+    align-self: center;
+    text-align: center;
+
+}
+.profile-bg {
+    background: linear-gradient(180deg, #9E2AB1 0%, rgba(158, 42, 177, 0) 100%);    position: absolute;
+    height: 100%;
+    width: 105%;
+    margin-top: -5px;
+    margin-left: -5px;
+    border-radius: 5rem;
+}
+.profile {
+    padding: 5px;
+    // background-color: rgba(0, 255, 255, 0.287);
+    position: relative;
+    width: 10rem;
+    text-align: center;
+    justify-content: end;
+    border-radius: 1rem;
+}
